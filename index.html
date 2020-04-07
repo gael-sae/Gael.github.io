@@ -5,10 +5,11 @@
 <p>Les problèmes encourue lors de la production de OGB Racing</p>
 <p>Lors du dérapage du véhicule avec la fonction void « IsSkid() » je n’arrivais pas à time pour que le véhicule retourne dans sa direction d’origine.</p>
 <p>J’ai dû pour régler cela utiliser la commande « Quaternion.euler » pour faire retourner le véhicule en fonction de son sens de direction d’origine gauche ou droite avec le bool déjà existant « isLookingLeft ». j’ai rajouté un bool supplémentaire dans les contrôles pour que le joueur n’ait plus le contrôle du véhicule lors de l’évènement.</p>
+<p></p>
 <p>Ce qui concerne les « power-up » le plus exigeant était le bouclier.</p>Pour les autres « power-up », j’ai usé du même stratagème utilisé pour le bouclier concernant la boutique. J’ai fermé la bool de façon permanente jusqu’au reload de la scène
 <P>J’ai. dû faire en sorte que le bouclier se brise tandis que l’obstacle devait reconnaitre la collision avec le véhicule. Mais je devais faire en sorte que le joueur se s’enlevais pas par inadvertance non plus dans la boutique s’il reclique sur le bouton d’achat du bouclier. J’ai donc séparé la fonction void « ShieldOn » en 2 fonction if avec des bool spécifique. Permettant dans un premier temps bloquer l’utilisation supplémentaire de la fonction lors de l’activation du bouclier et dans un second temps d’ouvrir un nouveau bool lors du contacte avec le prochain obstacle pour activer la fonction pour désactiver le bouclier par la suite.</p>
 <p>J’ai dû faire en sorte que le bouclier détruise directement l’obstacle car il arrivait que dans la version mobile le véhicule se prenne quand même l’obstacle.</p>
+<p></p>
 <p>Pour les autres « power-up », j’ai usé du même stratagème utilisé pour le bouclier concernant la boutique. J’ai fermé la bool de façon permanente jusqu’au reload de la scène</p>
-<p>.</p>
 </body>
 </html>
