@@ -1,0 +1,28 @@
+# GPR440.2 Purge the Curse
+
+## Projet
+Le jeu a été fait dans le module GPR4400.2 en première année à l'SAE concernant L'Inteligence Artificiel (IA) et la génération procédurale.
+Il doit contenir une carte généré procéduralement et une IA détérminé par le biais d'un pathfinding et doit interagire avec son environnement.
+
+## Introduction
+
+Purge the Curse est un rogue-like, vue en 3/4 où l'on doit tuer tous les monstres et s'échapper de la carte pour conjurer le maléfice.
+Le joueur au début de chaque partie devient un monstre aléatoire en temps que avatar jouable dans une liste de monstre. Si il meure une première fois,
+il aura un temps limité sous un état fantomatique pour contrôler un monstre proche de son choix pour une seconde et dernière chance.
+
+## Processus de développement
+
+Mon colègue a fait une génération de carte via un spawn de préfab qui se repousse pour générer la carte du jeu de façon aléatoire.
+Dans ces préfab j'ai mis les waypoints manuellement et sont lié par une liste propre à chaques waypoints inscrit aussi manuellement.
+
+![](https://github.com/gael-sae/Gael.github.io/blob/master/Image/Room7.png)
+![](https://github.com/gael-sae/Gael.github.io/blob/master/Image/Room11.png)
+
+Concernant l'AI avec le A* j'ai fait un premier jet fonctionnel mais pas opérationnel j'ai du me faire aider par mon colègue pour terminer,
+correctement la détection de la cible, waypoint ou joueur, tout en passant sur les waypoints pour arriver à la cible.
+J'ai placé par la suite un menu principal avec boutons et sons où le joueur peut lancer le jeu.
+
+
+## Conclusion
+L'argorithme A* et l'IA peut être compléxifié grâce a des states machines plus ou moins développé.
+La génération procédurale peut être faite de multiple façon suivant le domaine qu'on choisi et le style de jeu.
